@@ -17,18 +17,26 @@ Você pode usar qualquer link MP4 de alta velocidade ou colocar seu arquivo de v
 
 export const HERO_CONTENT = {
   videoUrl: "https://seu-cdn-ou-servidor.com/video-institucional.mp4",
-  posterImage: "/src/assets/images/foto_escritorio.jpg",
+  posterImage: heroImage,
   // ...
 };
+```
+
+Para imagens dentro de `src/assets`, importe cada arquivo no início de `lawFirmConfig.ts` e use a variável correspondente. O Vite então inclui a imagem no build de produção:
+
+```ts
+import heroImage from '../assets/images/foto_escritorio.jpg';
 3. Como colocar as fotos reais dos advogados:
 Basta salvar as fotos dos sócios em src/assets/images/ e indicar o caminho na propriedade photo do sócio correspondente em PARTNERS_CONTENT.
+
+import fotoRodrigo from '../assets/images/foto_rodrigo.jpg';
 
 export const PARTNERS_CONTENT = [
   {
     name: "Dr. Nome do Advogado",
     role: "Sócio Titular de Direito Tributário",
     oab: "OAB/SP 123.456",
-    photo: "/src/assets/images/foto_rodrigo.jpg", // 👈 COLOQUE AQUI A FOTO
+    photo: fotoRodrigo, // 👈 importe fotoRodrigo de ../assets/images/foto_rodrigo.jpg
     // ...
   }
 ];
@@ -38,7 +46,9 @@ Todas as animações de scroll e parallax usam motion/react com propriedades do 
 5. Como trocar o vídeo do banner de Casos de Sucesso:
 No arquivo src/data/lawFirmConfig.ts, altere o objeto CASE_STUDIES_HEADER_MEDIA:
 
+import lawFirmPoster from '../assets/images/law_firm_court_strategy.jpg';
+
 export const CASE_STUDIES_HEADER_MEDIA = {
   videoUrl: "https://seu-cdn-ou-servidor.com/video-contratos.mp4",
-  posterImage: "/src/assets/images/law_firm_court_strategy.jpg"
+  posterImage: lawFirmPoster
 };

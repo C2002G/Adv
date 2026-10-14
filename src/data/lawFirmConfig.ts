@@ -33,6 +33,11 @@
  * ==============================================================================================
  */
 
+import heroLawOfficeImage from '../assets/images/hero_law_office_1791926157858.jpg';
+import lawFirmCourtStrategyImage from '../assets/images/law_firm_court_strategy_1791926159931.jpg';
+import managingPartnerFemaleImage from '../assets/images/managing_partner_female_1791926159592.jpg';
+import seniorPartnerLawyerImage from '../assets/images/senior_partner_lawyer_1791926159516.jpg';
+
 // ----------------------------------------------------------------------------------------------
 // 1. INFORMAÇÕES GERAIS, CONTATOS E COMPLIANCE OAB
 // ----------------------------------------------------------------------------------------------
@@ -51,11 +56,11 @@ export const FIRM_INFO = {
   
   // 📍 LOCALIZAÇÃO FÍSICA
   address: {
-    street: "Av. Brigadeiro Faria Lima, 3477",
+    street: "Av. Salvador França, 1234",
     suite: "18º andar - Itaim Bibi",
-    city: "São Paulo - SP",
+    city: "Porto Alegre - RS",
     cep: "04538-133",
-    googleMapsUrl: "https://maps.google.com/?q=Av.+Brigadeiro+Faria+Lima,+3477+-+Itaim+Bibi,+São+Paulo"
+    googleMapsUrl: "https://maps.app.goo.gl/FfpAq5booTVQNvmc7"
   },
   
   workingHours: "Segunda a Sexta, das 09h às 19h",
@@ -82,7 +87,7 @@ export const HERO_CONTENT = {
    * Caso o vídeo demore a carregar no mobile, a `posterImage` é exibida imediatamente sem travamento.
    */
   videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-modern-office-building-with-glass-facade-at-sunset-41603-large.mp4",
-  posterImage: "/src/assets/images/hero_law_office_1791926157858.jpg",
+  posterImage: heroLawOfficeImage,
 
   ctaPrimary: {
     text: "Falar com Advogado Sócio",
@@ -138,8 +143,8 @@ export const ABOUT_CONTENT = {
   secondaryParagraph: "Nossos clientes são acompanhados diretamente por sócios seniores. Tratamos cada processo societário, fiscal ou cível como um tabuleiro estratégico onde a preservação do capital e da reputação é inegociável.",
   
   /* ✏️ CONFIGURE AQUI AS FOTOS DA SEÇÃO INSTITUCIONAL */
-  primaryImage: "/src/assets/images/law_firm_court_strategy_1791926159931.jpg",
-  boardroomImage: "/src/assets/images/hero_law_office_1791926157858.jpg",
+  primaryImage: lawFirmCourtStrategyImage,
+  boardroomImage: heroLawOfficeImage,
 
   pillars: [
     {
@@ -271,7 +276,7 @@ export const PARTNERS_CONTENT = [
     degrees: "Doutor em Direito Econômico pela USP • Mestre em Tributação Internacional (LL.M.) pela Universidade de Coimbra",
     bio: "Mais de 25 anos de experiência liderando reestruturações societárias e defesas tributárias de grande vulto para indústrias, construtoras e holdings do agronegócio.",
     /* ✏️ FOTO DO SÓCIO: Altere para a foto do seu cliente */
-    photo: "/src/assets/images/senior_partner_lawyer_1791926159516.jpg",
+    photo: seniorPartnerLawyerImage,
     linkedin: "https://linkedin.com",
     contactEmail: "r.valenca@valencacastro.adv.br"
   },
@@ -282,7 +287,7 @@ export const PARTNERS_CONTENT = [
     degrees: "Mestre em Processo Civil pela PUC-SP • Especialista em Arbitragem Empresarial pela FGV Direito",
     bio: "Atuação combativa perante Tribunais de Justiça e Tribunais Superiores (STJ e STF). Referência nacional em disputas contratuais complexas e recuperação patrimonial.",
     /* ✏️ FOTO DA SÓCIA: Altere para a foto da sua cliente */
-    photo: "/src/assets/images/managing_partner_female_1791926159592.jpg",
+    photo: managingPartnerFemaleImage,
     linkedin: "https://linkedin.com",
     contactEmail: "h.castro@valencacastro.adv.br"
   }
@@ -297,7 +302,7 @@ export const PARALLAX_BREAK_CONTENT = {
   
   /* ✏️ VÍDEO DE FUNDO DO PARALLAX (pode ser substituído facilmente): */
   videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-city-view-at-night-with-skyscrapers-41604-large.mp4",
-  posterImage: "/src/assets/images/law_firm_court_strategy_1791926159931.jpg"
+  posterImage: lawFirmCourtStrategyImage
 };
 
 // ----------------------------------------------------------------------------------------------
@@ -308,7 +313,7 @@ export const PARALLAX_BREAK_CONTENT = {
  */
 export const CASE_STUDIES_HEADER_MEDIA = {
   videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-hands-of-business-people-signing-a-contract-42805-large.mp4",
-  posterImage: "/src/assets/images/law_firm_court_strategy_1791926159931.jpg"
+  posterImage: lawFirmCourtStrategyImage
 };
 
 export const CASE_STUDIES = [
