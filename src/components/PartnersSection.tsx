@@ -51,7 +51,8 @@ export function PartnersSection() {
                   src={partner.photo}
                   alt={partner.name}
                   referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover object-top filter brightness-[0.93] contrast-[1.04] group-hover:scale-104 transition-transform duration-700"
+                  style={{ objectPosition: partner.photoPosition }}
+                  className="w-full h-full object-cover filter brightness-[0.93] contrast-[1.04] group-hover:scale-104 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#11131b] via-[#11131b]/30 to-transparent" />
                 

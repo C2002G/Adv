@@ -277,6 +277,7 @@ export const PARTNERS_CONTENT = [
     bio: "Mais de 25 anos de experiência liderando reestruturações societárias e defesas tributárias de grande vulto para indústrias, construtoras e holdings do agronegócio.",
     /* ✏️ FOTO DO SÓCIO: Altere para a foto do seu cliente */
     photo: seniorPartnerLawyerImage,
+    photoPosition: "center top",
     linkedin: "https://linkedin.com",
     contactEmail: "r.valenca@valencacastro.adv.br"
   },
@@ -288,6 +289,7 @@ export const PARTNERS_CONTENT = [
     bio: "Atuação combativa perante Tribunais de Justiça e Tribunais Superiores (STJ e STF). Referência nacional em disputas contratuais complexas e recuperação patrimonial.",
     /* ✏️ FOTO DA SÓCIA: Altere para a foto da sua cliente */
     photo: managingPartnerFemaleImage,
+    photoPosition: "center 40%",
     linkedin: "https://linkedin.com",
     contactEmail: "h.castro@valencacastro.adv.br"
   }
