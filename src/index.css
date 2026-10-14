@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-display: 'Cinzel', serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --color-gold-50: #fcfbf7;
+  --color-gold-100: #f5f0e3;
+  --color-gold-200: #ebdcb9;
+  --color-gold-300: #dec388;
+  --color-gold-400: #d0ab5f;
+  --color-gold-500: #c5a880;
+  --color-gold-600: #a78858;
+  --color-gold-700: #856a42;
+  --color-gold-800: #675034;
+  --color-gold-900: #493826;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #0b0c10;
+    color: #e6e8eb;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+
+  .font-serif-editorial {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0c10;
+}
+::-webkit-scrollbar-thumb {
+  background: #252834;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a880;
+}
+
+/* Glassmorphism subtle surface */
+.glass-panel {
+  background: rgba(17, 18, 23, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(197, 168, 128, 0.15);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(22, 24, 32, 0.85);
+  border-color: rgba(197, 168, 128, 0.35);
+  transform: translateY(-2px);
+}
+
+/* Gold gradient text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #f5f0e3 0%, #dec388 50%, #c5a880 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
